@@ -1,8 +1,9 @@
 * {
-    font-family: 'Futura-Normal', arial;
+    font-family: sans-serif;
     text-decoration: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .container-shop {
@@ -33,14 +34,15 @@ video {
 
 .shop-2{
     grid-area: 1 / 3 / 3 / 5;
+    height: 1024px;
 }
 
 
 /* /////SHOP 3///////// */
 
 .shop-3 {
-    width: 364px;
-    height: 516px;
+    width: 360px;
+    height: 512px;
     grid-area: 3 / 1 / 4 / 2;
 }
 
@@ -58,8 +60,8 @@ video {
 /* /////SHOP 4///////// */
 
 .shop-4 {
-    width: 364px;
-    height: 516px;
+    width: 360px;
+    height: 512px;
     grid-area: 3 / 2 / 4 / 3;
 
 }
@@ -77,8 +79,8 @@ video {
 /* /////SHOP 5///////// */
 
 .shop-5 {
-    width: 364px;
-    height: 516px;
+    width: 360px;
+    height: 512px;
     grid-area: 3 / 3 / 4 / 4;
     
 
@@ -97,8 +99,8 @@ video {
 /* /////SHOP 6///////// */
 
 .shop-6 {
-    width: 364px;
-    height: 516px;
+    width: 360px;
+    height: 512px;
     grid-area: 3 / 4 / 4 / 5;
 
 }
@@ -119,12 +121,13 @@ video {
 
 .shop-text{
     opacity: 0;
-    width: 364px;
-    height: 516px;
-    font-size: 14px;
+    width: 360px;
+    height: 512px;
+    font-size: 13px;
     display: flex;
     justify-content: start;
     align-items: end;
+    font-weight: 200;
     transition: 0.7s;
     color: black;
 }
