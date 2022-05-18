@@ -14,7 +14,11 @@
     grid-row-gap: 0px;
 }
     
-.shop-1 { grid-area: 1 / 1 / 2 / 2; }
+.shop-1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    width: 1024px;
+    height: 818px;
+}
 .shop-2 { 
     grid-area: 1 / 2 / 2 / 3;
     background-color: white;
@@ -25,6 +29,10 @@
     align-items: center;
 }
 
+.shop-3 { 
+    width: 1024px;
+    height: 818px;
+}
 
 .shop-content {
     height: 385px;
@@ -45,12 +53,117 @@ p{
     color: #A4A4A4;
 }
 
-.btn {
+/* .btn {
     font-size: 12px;
     border: 1px solid black;
     padding: 20px;
     color: black;
     letter-spacing: 1px;
+} */
+
+
+
+/* //////SHOP2///// */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    position: sticky;
+}
+.div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    position: relative;
+}
+.div3 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    position: relative;
+}
+.div4 { 
+    grid-area: 4 / 1 / 5 / 2; 
+    position: relative;
+}
+.div5 { 
+    grid-area: 1 / 2 / 5 / 3; 
+    position: relative;
 }
 
-/* /////BTN////// */
+/* /////BTN///// */
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+
+}
+
+ul li {
+    list-style: none;
+    
+}
+
+ul li a {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: white;
+    text-align: center;
+    line-height: 60px;
+
+    font-size: 12px;
+    border: 1px solid black;
+    color: black;
+    letter-spacing: 1px;
+}
+
+ul li a:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: rgba(255, 0, 0, 0);
+    transition: .6s;
+    transform-origin: bottom;
+    transform: rotateX(90deg) translateY(30px);
+
+} 
+
+ul li a:hover:before {
+    transform: rotateX(0deg) translateY(0px);
+}
+
+ul li a:after{
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .6s;
+    transform-origin: top;
+    transform: rotateX(0deg) translateY(0px);
+}
+
+ul li a:hover:after {
+    transform: rotateX(90deg) translateY(0px);
+}
+
+

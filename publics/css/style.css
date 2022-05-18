@@ -7,7 +7,7 @@
 }
 
 .container-shop {
-    position: absolute;
+    /* position: absolute; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -153,8 +153,8 @@ video {
 footer {
     height: 400px;
     background-color: white;
-    position: sticky;
-    z-index: -1;
+    /* position: sticky; */
+    /* z-index: -1; */
 }
 
 .footer-text {
